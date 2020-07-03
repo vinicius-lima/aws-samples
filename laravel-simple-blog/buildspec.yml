@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 7.3
+  pre_build:
+    commands:
+      - yum install -y unzip
+  build:
+    commands:
+      - composer install
+artifacts:
+  files:
+    - "**/*"
+  name: laravel-simple-blog-$(date +%Y-%m-%d)
