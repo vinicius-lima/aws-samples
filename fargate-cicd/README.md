@@ -1,6 +1,6 @@
 # AWS Fargate CI/CD sample
 
-This sample uses an already create AWS CodePipeline pipeline to create a Docker image, push it to Amazon ECR and perform a blue/green deployment to Fargate.
+This sample uses a pre-built AWS CodePipeline pipeline to create a Docker image, push it to Amazon ECR and perform a blue/green deployment to Fargate.
 
 Notice that all resources must be previously create, for example, AWS Application Load Balancer, AWS Fargate cluster, AWS ECS task definitions, etc.
 
